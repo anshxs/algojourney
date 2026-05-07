@@ -1,0 +1,386 @@
+{
+    "totalSolved": 358,
+    "totalSubmissions": [
+        {
+            "difficulty": "All",
+            "count": 384,
+            "submissions": 1299
+        },
+        {
+            "difficulty": "Easy",
+            "count": 238,
+            "submissions": 842
+        },
+        {
+            "difficulty": "Medium",
+            "count": 133,
+            "submissions": 423
+        },
+        {
+            "difficulty": "Hard",
+            "count": 13,
+            "submissions": 34
+        }
+    ],
+    "totalQuestions": 3920,
+    "easySolved": 231,
+    "totalEasy": 941,
+    "mediumSolved": 121,
+    "totalMedium": 2050,
+    "hardSolved": 6,
+    "totalHard": 929,
+    "ranking": 346669,
+    "contributionPoint": 903,
+    "reputation": 0,
+    "submissionCalendar": {
+        "1750896000": 1,
+        "1755648000": 24,
+        "1755907200": 29,
+        "1755993600": 47,
+        "1756080000": 54,
+        "1756166400": 22,
+        "1756252800": 6,
+        "1757289600": 6,
+        "1757376000": 49,
+        "1757462400": 2,
+        "1757548800": 1,
+        "1757635200": 1,
+        "1757808000": 7,
+        "1758067200": 3,
+        "1758326400": 10,
+        "1758412800": 6,
+        "1758499200": 23,
+        "1759017600": 23,
+        "1759104000": 113,
+        "1759190400": 7,
+        "1759708800": 3,
+        "1761436800": 1,
+        "1761696000": 8,
+        "1761955200": 31,
+        "1762128000": 48,
+        "1762214400": 56,
+        "1762300800": 2,
+        "1762387200": 6,
+        "1762473600": 1,
+        "1762560000": 1,
+        "1762646400": 1,
+        "1762732800": 1,
+        "1762992000": 16,
+        "1763164800": 3,
+        "1763251200": 1,
+        "1763337600": 1,
+        "1763424000": 2,
+        "1763510400": 48,
+        "1763596800": 58,
+        "1763769600": 1,
+        "1763942400": 3,
+        "1764115200": 6,
+        "1764374400": 5,
+        "1764460800": 25,
+        "1764547200": 20,
+        "1764633600": 2,
+        "1764720000": 1,
+        "1764806400": 1,
+        "1764892800": 5,
+        "1764979200": 10,
+        "1765065600": 15,
+        "1765152000": 16,
+        "1765238400": 1,
+        "1765324800": 2,
+        "1765411200": 1,
+        "1765497600": 1,
+        "1765584000": 1,
+        "1765670400": 5,
+        "1765756800": 1,
+        "1765843200": 4,
+        "1765929600": 1,
+        "1766016000": 1,
+        "1766102400": 10,
+        "1766188800": 11,
+        "1766275200": 1,
+        "1766361600": 1,
+        "1766448000": 5,
+        "1766534400": 1,
+        "1766620800": 9,
+        "1766707200": 14,
+        "1766793600": 13,
+        "1766880000": 1,
+        "1766966400": 2,
+        "1767052800": 1,
+        "1767139200": 1,
+        "1767225600": 1,
+        "1767312000": 1,
+        "1767398400": 1,
+        "1767484800": 2,
+        "1767571200": 11,
+        "1767657600": 16,
+        "1767744000": 30,
+        "1767830400": 22,
+        "1767916800": 5,
+        "1768003200": 1,
+        "1768089600": 3,
+        "1768176000": 10,
+        "1768262400": 3,
+        "1768348800": 3,
+        "1768435200": 1,
+        "1768521600": 9,
+        "1768608000": 10,
+        "1768694400": 10,
+        "1768780800": 1,
+        "1768867200": 7,
+        "1768953600": 10,
+        "1769040000": 3,
+        "1769126400": 1,
+        "1769212800": 2,
+        "1769299200": 4,
+        "1769385600": 1,
+        "1769472000": 1,
+        "1769558400": 1,
+        "1769644800": 1,
+        "1769731200": 1,
+        "1769817600": 10,
+        "1769904000": 1,
+        "1769990400": 1,
+        "1770076800": 1,
+        "1770163200": 1,
+        "1770249600": 1,
+        "1770336000": 1,
+        "1771977600": 8,
+        "1772064000": 2,
+        "1773705600": 21,
+        "1773878400": 9,
+        "1774224000": 3,
+        "1774310400": 3,
+        "1774396800": 1,
+        "1774828800": 1,
+        "1774915200": 1,
+        "1775001600": 7,
+        "1775088000": 7,
+        "1775520000": 1,
+        "1776038400": 25,
+        "1776124800": 6,
+        "1776211200": 5,
+        "1776297600": 7,
+        "1776470400": 1,
+        "1776556800": 6,
+        "1776643200": 8,
+        "1776816000": 17,
+        "1777075200": 4,
+        "1777161600": 7,
+        "1777248000": 2,
+        "1777334400": 3,
+        "1777507200": 8,
+        "1777680000": 5,
+        "1777766400": 6,
+        "1777939200": 13,
+        "1778025600": 4
+    },
+    "recentSubmissions": [
+        {
+            "title": "Jump Game II",
+            "titleSlug": "jump-game-ii",
+            "timestamp": "1778058924",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Jump Game II",
+            "titleSlug": "jump-game-ii",
+            "timestamp": "1778057340",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Jump Game II",
+            "titleSlug": "jump-game-ii",
+            "timestamp": "1778057215",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Jump Game",
+            "titleSlug": "jump-game",
+            "timestamp": "1778056403",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Lemonade Change",
+            "titleSlug": "lemonade-change",
+            "timestamp": "1778004058",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Lemonade Change",
+            "titleSlug": "lemonade-change",
+            "timestamp": "1778004036",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Minimum Add to Make Parentheses Valid",
+            "titleSlug": "minimum-add-to-make-parentheses-valid",
+            "timestamp": "1778002838",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Assign Cookies",
+            "titleSlug": "assign-cookies",
+            "timestamp": "1778002154",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Assign Cookies",
+            "titleSlug": "assign-cookies",
+            "timestamp": "1778001804",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Maximum Points You Can Obtain from Cards",
+            "titleSlug": "maximum-points-you-can-obtain-from-cards",
+            "timestamp": "1778001437",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Maximum Points You Can Obtain from Cards",
+            "titleSlug": "maximum-points-you-can-obtain-from-cards",
+            "timestamp": "1778000579",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Maximum Points You Can Obtain from Cards",
+            "titleSlug": "maximum-points-you-can-obtain-from-cards",
+            "timestamp": "1778000506",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Fruit Into Baskets",
+            "titleSlug": "fruit-into-baskets",
+            "timestamp": "1778000219",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Fruit Into Baskets",
+            "titleSlug": "fruit-into-baskets",
+            "timestamp": "1777999863",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Max Consecutive Ones III",
+            "titleSlug": "max-consecutive-ones-iii",
+            "timestamp": "1777998816",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Max Consecutive Ones III",
+            "titleSlug": "max-consecutive-ones-iii",
+            "timestamp": "1777998390",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Longest Substring Without Repeating Characters",
+            "titleSlug": "longest-substring-without-repeating-characters",
+            "timestamp": "1777997181",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Minimum Cost to Move Between Indices",
+            "titleSlug": "minimum-cost-to-move-between-indices",
+            "timestamp": "1777779957",
+            "statusDisplay": "Accepted",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Maximize Fixed Points After Deletions",
+            "titleSlug": "maximize-fixed-points-after-deletions",
+            "timestamp": "1777779378",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        },
+        {
+            "title": "Maximize Fixed Points After Deletions",
+            "titleSlug": "maximize-fixed-points-after-deletions",
+            "timestamp": "1777779171",
+            "statusDisplay": "Wrong Answer",
+            "lang": "python",
+            "__typename": "SubmissionDumpNode"
+        }
+    ],
+    "matchedUserStats": {
+        "acSubmissionNum": [
+            {
+                "difficulty": "All",
+                "count": 358,
+                "submissions": 974
+            },
+            {
+                "difficulty": "Easy",
+                "count": 231,
+                "submissions": 653
+            },
+            {
+                "difficulty": "Medium",
+                "count": 121,
+                "submissions": 307
+            },
+            {
+                "difficulty": "Hard",
+                "count": 6,
+                "submissions": 14
+            }
+        ],
+        "totalSubmissionNum": [
+            {
+                "difficulty": "All",
+                "count": 384,
+                "submissions": 1299
+            },
+            {
+                "difficulty": "Easy",
+                "count": 238,
+                "submissions": 842
+            },
+            {
+                "difficulty": "Medium",
+                "count": 133,
+                "submissions": 423
+            },
+            {
+                "difficulty": "Hard",
+                "count": 13,
+                "submissions": 34
+            }
+        ]
+    }
+}
