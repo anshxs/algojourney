@@ -12,11 +12,11 @@ export default function LeetCodeBadges({ badgesInfo }) {
         <div className="grid gap-3 sm:grid-cols-2">
           {badges.map((badge) => (
             <Card key={badge.id} className="group flex items-center gap-4 bg-[#151515] p-4 transition hover:-translate-y-0.5 hover:border-[#ff6a3d]/35 hover:bg-[#1d1d1d]">
-              <div className="rounded-xl bg-[linear-gradient(135deg,#ff2f7d,#ff7418)] p-[1px]">
+              <div className="shrink-0 rounded-xl bg-[linear-gradient(135deg,#ff2f7d,#ff7418)] p-[1px]">
                 <img src={badge.icon} alt={badge.displayName} className="h-14 w-14 rounded-xl bg-[#111111] object-cover" />
               </div>
-              <div>
-                <p className="font-medium text-white transition group-hover:text-[#ffb088]">{badge.displayName}</p>
+              <div className="min-w-0">
+                <p className="break-words font-medium text-white transition group-hover:text-[#ffb088]">{badge.displayName}</p>
                 <p className="text-sm text-slate-400">{formatDate(badge.creationDate)}</p>
               </div>
             </Card>
@@ -26,9 +26,9 @@ export default function LeetCodeBadges({ badgesInfo }) {
         <div className="space-y-3">
           {upcoming.map((badge) => (
             <Card key={badge.name} className="bg-[#151515] p-4 transition hover:border-[#6b7cff]/35 hover:bg-[#1d1d1d]">
-              <div className="flex items-center justify-between gap-3">
-                <p className="font-medium text-white">{badge.name}</p>
-                <span className="rounded-md border border-white/10 bg-[#101010] px-2 py-1 text-xs text-zinc-400">{badge.progress}%</span>
+              <div className="flex min-w-0 items-center justify-between gap-3">
+                <p className="break-words font-medium text-white">{badge.name}</p>
+                <span className="shrink-0 rounded-md border border-white/10 bg-[#101010] px-2 py-1 text-xs text-zinc-400">{badge.progress}%</span>
               </div>
               <div className="mt-3 h-2 overflow-hidden rounded-full bg-white/10">
                 <div

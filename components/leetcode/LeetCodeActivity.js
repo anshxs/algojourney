@@ -76,33 +76,33 @@ export default function LeetCodeActivity({ calendar }) {
 
   return (
     <LeetCodeSection title="Activity" subtitle="Current streak, active years, and a full-year submission heat map.">
-      <div className="grid gap-4 xl:grid-cols-[15rem_minmax(0,1fr)]">
+      <div className="grid min-w-0 gap-4 xl:grid-cols-[15rem_minmax(0,1fr)]">
         <div className="grid min-w-0 gap-3 sm:grid-cols-3 xl:grid-cols-1">
           <Card className="relative overflow-hidden bg-[linear-gradient(135deg,#21140f,#151515)] p-4 transition hover:border-[#ff6a3d]/40">
             <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#ff6a3d]/20 blur-2xl" />
-            <div className="relative flex items-center justify-between">
-              <div>
+            <div className="relative flex min-w-0 items-center justify-between gap-3">
+              <div className="min-w-0">
                 <p className="text-sm text-slate-500">Fire Streak</p>
-                <p className="mt-2 text-3xl font-semibold text-white">{formatNumber(calendar?.streak)}</p>
+                <p className="mt-2 break-words text-3xl font-semibold text-white">{formatNumber(calendar?.streak)}</p>
               </div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#ff6a3d]/15 text-[#ff9a6d]">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#ff6a3d]/15 text-[#ff9a6d]">
                 <Flame className="h-6 w-6" />
               </div>
             </div>
           </Card>
           <Card className="bg-[#151515] p-4 transition hover:border-[#28d17c]/30 hover:bg-[#1d1d1d]">
-            <div className="flex items-center justify-between">
+            <div className="flex min-w-0 items-center justify-between gap-3">
               <p className="text-sm text-slate-500">Active Days</p>
-              <CalendarDays className="h-4 w-4 text-[#28d17c]" />
+              <CalendarDays className="h-4 w-4 shrink-0 text-[#28d17c]" />
             </div>
-            <p className="mt-2 text-2xl font-semibold text-white">{formatNumber(calendar?.totalActiveDays)}</p>
+            <p className="mt-2 break-words text-2xl font-semibold text-white">{formatNumber(calendar?.totalActiveDays)}</p>
           </Card>
           <Card className="bg-[#151515] p-4 transition hover:border-[#6b7cff]/30 hover:bg-[#1d1d1d]">
-            <div className="flex items-center justify-between">
+            <div className="flex min-w-0 items-center justify-between gap-3">
               <p className="text-sm text-slate-500">Years</p>
-              <Sparkles className="h-4 w-4 text-[#6b7cff]" />
+              <Sparkles className="h-4 w-4 shrink-0 text-[#6b7cff]" />
             </div>
-            <p className="mt-2 text-lg font-semibold text-white">{calendar?.activeYears?.join(", ") || "—"}</p>
+            <p className="mt-2 break-words text-lg font-semibold text-white">{calendar?.activeYears?.join(", ") || "—"}</p>
           </Card>
         </div>
 
@@ -180,7 +180,7 @@ export default function LeetCodeActivity({ calendar }) {
                 ))}
                 <span>More</span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <span>{formatNumber(heatmap.active)} active days</span>
                 <span>{formatNumber(heatmap.total)} submissions</span>
                 <span>Best day {formatNumber(heatmap.best)}</span>

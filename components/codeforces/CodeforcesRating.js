@@ -16,14 +16,14 @@ export default function CodeforcesRating({ rating }) {
   return (
     <CodeforcesSection title="Codeforces Rating" subtitle="Recent rated contest changes.">
       {contests.length ? (
-        <div className="grid gap-4 xl:grid-cols-[1fr_1fr]">
+        <div className="grid min-w-0 gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
           <RatingChart data={chartData} color="#ff2f7d" />
-          <div className="grid gap-2">
+          <div className="grid min-w-0 gap-2">
             {contests.slice(-8).reverse().map((contest) => (
               <Card key={`${contest.contestId}-${contest.ratingUpdateTimeSeconds}`} className="bg-[#151515] p-3 transition hover:border-[#ff2f7d]/35 hover:bg-[#1d1d1d]">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <p className="font-medium text-white">{contest.contestName}</p>
+                <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="min-w-0 flex-1">
+                    <p className="break-words font-medium text-white">{contest.contestName}</p>
                     <p className="text-xs text-slate-500">{formatDateFromSeconds(contest.ratingUpdateTimeSeconds)}</p>
                   </div>
                   <Badge variant="info">

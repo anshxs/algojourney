@@ -42,11 +42,11 @@ export default function RandomQuestionCard() {
 
   return (
     <Card className="mt-3 overflow-hidden bg-[#121212]/90 p-3 shadow-[0_18px_60px_rgba(0,0,0,0.24)]">
-      <div className="mb-3 flex items-center gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#ff6a3d]/15 text-[#ff9a6d]">
+      <div className="mb-3 flex min-w-0 items-center gap-2">
+        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#ff6a3d]/15 text-[#ff9a6d]">
           <Shuffle className="h-4 w-4" />
         </div>
-        <div>
+        <div className="min-w-0">
           <p className="text-sm font-semibold text-white">Random Question</p>
           <p className="text-xs text-zinc-500">Pick a quick LeetCode drill</p>
         </div>
@@ -91,7 +91,7 @@ export default function RandomQuestionCard() {
             </span>
             <span className="text-xs text-zinc-500">#{question.frontend_id}</span>
           </div>
-          <p className="line-clamp-3 text-sm font-medium leading-5 text-white">{question.title}</p>
+          <p className="line-clamp-3 break-words text-sm font-medium leading-5 text-white">{question.title}</p>
           <a
             href={question.url}
             target="_blank"

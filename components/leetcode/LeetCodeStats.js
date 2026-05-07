@@ -14,8 +14,8 @@ export default function LeetCodeStats({ submitStats }) {
 
   return (
     <LeetCodeSection title="Submission Stats" subtitle="Accepted counts and total attempts split by difficulty.">
-      <div className="overflow-hidden rounded-xl border border-white/10 bg-[#111111]">
-        <table className="w-full text-left text-sm">
+      <div className="overflow-x-auto rounded-xl border border-white/10 bg-[#111111]">
+        <table className="w-full min-w-[42rem] text-left text-sm">
           <thead className="bg-[#1d1d1d] text-slate-300">
             <tr>
               <th className="px-4 py-3 font-medium">Difficulty</th>

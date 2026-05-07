@@ -56,9 +56,12 @@ export default function ProgressRings({ easy, medium, hard, totalSolved, totalQu
   const totalPercent = totalQuestions ? Math.round((totalSolved / totalQuestions) * 100) : 0;
 
   return (
-    <div className="group relative flex items-center justify-center overflow-hidden rounded-xl p-3">
+    <div className="group relative flex min-h-[15rem] items-center justify-center overflow-hidden rounded-xl p-2 sm:p-3">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,106,61,0.16),transparent_56%)] opacity-80 transition group-hover:opacity-100" />
-      <svg width={SIZE} height={SIZE} className="relative drop-shadow-[0_0_28px_rgba(255,106,61,0.2)]">
+      <svg
+        viewBox={`0 0 ${SIZE} ${SIZE}`}
+        className="relative h-auto w-full max-w-[15rem] drop-shadow-[0_0_28px_rgba(255,106,61,0.2)]"
+      >
         <defs>
           <filter id="ringGlow">
             <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
@@ -97,13 +100,15 @@ export default function ProgressRings({ easy, medium, hard, totalSolved, totalQu
         />
       </svg>
 
-      <div className="absolute text-center">
-        <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-[#ff6a3d]/15 text-[#ff9a6d]">
-          <Flame className="h-4 w-4" />
+      <div className="absolute inset-0 flex items-center justify-center text-center">
+        <div className="px-2">
+          <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-[#ff6a3d]/15 text-[#ff9a6d]">
+            <Flame className="h-4 w-4" />
+          </div>
+          <p className="text-4xl font-semibold tracking-normal text-white sm:text-5xl">{totalSolved}</p>
+          <p className="mt-1 text-xs uppercase tracking-[0.16em] text-zinc-500">of {totalQuestions}</p>
+          <p className="mt-2 text-sm font-medium text-[#ff9a6d]">{totalPercent}% complete</p>
         </div>
-        <p className="text-5xl font-semibold tracking-tight text-white">{totalSolved}</p>
-        <p className="mt-1 text-xs uppercase tracking-[0.16em] text-zinc-500">of {totalQuestions}</p>
-        <p className="mt-2 text-sm font-medium text-[#ff9a6d]">{totalPercent}% complete</p>
       </div>
     </div>
   );

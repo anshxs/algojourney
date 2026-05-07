@@ -38,15 +38,15 @@ export default function DifficultyBreakdown({ items }) {
             onMouseEnter={() => setActive(item.difficulty)}
             className={`cursor-default p-4 transition duration-200 hover:-translate-y-0.5 ${style.glow} ${isActive ? "bg-[#202020]" : "bg-[#171717]"}`}
           >
-            <div className="flex items-center justify-between gap-3">
-              <div>
+            <div className="flex min-w-0 items-center justify-between gap-3">
+              <div className="min-w-0">
                 <p className={`text-sm font-semibold ${style.color}`}>{item.difficulty}</p>
-                <p className="mt-1 text-2xl font-semibold text-white">
+                <p className="mt-1 break-words text-2xl font-semibold text-white">
                   {formatNumber(item.solved)}
                   <span className="text-sm font-normal text-zinc-500"> / {formatNumber(item.total)}</span>
                 </p>
               </div>
-              <span className="rounded-md border border-white/10 bg-[#111111] px-2.5 py-1 text-sm text-zinc-300">
+              <span className="shrink-0 rounded-md border border-white/10 bg-[#111111] px-2.5 py-1 text-sm text-zinc-300">
                 {percent}%
               </span>
             </div>

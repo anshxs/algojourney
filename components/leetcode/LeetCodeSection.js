@@ -3,14 +3,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui
 export default function LeetCodeSection({ title, subtitle, children }) {
   return (
     <Card as="section" className="overflow-hidden bg-[#171717]/95 shadow-[0_22px_80px_rgba(0,0,0,0.32)]">
-      <CardHeader className="border-b border-white/10 bg-[linear-gradient(135deg,rgba(255,47,125,0.06),rgba(255,116,24,0.04),transparent)] p-4">
-        <CardTitle className="flex items-center gap-2 text-base">
-          <span className="h-2 w-2 rounded-full bg-[#ff6a3d] shadow-[0_0_18px_rgba(255,106,61,0.7)]" />
+      <CardHeader className="border-b border-white/10 bg-[linear-gradient(135deg,rgba(255,47,125,0.06),rgba(255,116,24,0.04),transparent)] p-3 sm:p-4">
+        <CardTitle className="flex min-w-0 items-center gap-2 text-base">
+          <span className="h-2 w-2 shrink-0 rounded-full bg-[#ff6a3d] shadow-[0_0_18px_rgba(255,106,61,0.7)]" />
           {title}
         </CardTitle>
         {subtitle ? <CardDescription>{subtitle}</CardDescription> : null}
       </CardHeader>
-      <CardContent className="p-4">{children}</CardContent>
+      <CardContent className="p-3 sm:p-4">{children}</CardContent>
     </Card>
   );
 }

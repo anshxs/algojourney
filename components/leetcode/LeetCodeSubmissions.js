@@ -12,13 +12,13 @@ export default function LeetCodeSubmissions({ submissions }) {
             key={submission.id}
             className="group flex flex-col gap-3 bg-[#151515] p-3 transition hover:-translate-y-0.5 hover:border-[#ff6a3d]/35 hover:bg-[#1d1d1d] sm:flex-row sm:items-center sm:justify-between"
           >
-            <div>
-              <p className="font-medium text-white transition group-hover:text-[#ffb088]">{submission.title}</p>
-              <p className="mt-1 text-xs text-slate-500">
+            <div className="min-w-0 flex-1">
+              <p className="break-words font-medium text-white transition group-hover:text-[#ffb088]">{submission.title}</p>
+              <p className="mt-1 break-words text-xs text-slate-500">
                 {submission.langName} · {formatDateFromSeconds(submission.timestamp)}
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-3 text-sm">
+            <div className="flex flex-wrap items-center gap-3 text-sm sm:justify-end">
               <Badge variant={submission.statusDisplay === "Accepted" ? "success" : "danger"}>
                 {submission.statusDisplay}
               </Badge>

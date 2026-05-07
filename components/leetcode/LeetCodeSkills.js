@@ -13,9 +13,9 @@ function SkillGroup({ title, items }) {
             key={skill.tagSlug}
             className="group rounded-lg border border-white/10 bg-[#101010] p-3 transition hover:border-[#ff6a3d]/35 hover:bg-[#181818]"
           >
-            <div className="flex items-center justify-between gap-3">
-              <span className="text-sm text-zinc-200 transition group-hover:text-white">{skill.tagName}</span>
-              <span className="text-sm font-semibold text-[#ffb088]">{skill.problemsSolved}</span>
+            <div className="flex min-w-0 items-center justify-between gap-3">
+              <span className="break-words text-sm text-zinc-200 transition group-hover:text-white">{skill.tagName}</span>
+              <span className="shrink-0 text-sm font-semibold text-[#ffb088]">{skill.problemsSolved}</span>
             </div>
             <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10">
               <div

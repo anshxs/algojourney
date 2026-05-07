@@ -38,7 +38,7 @@ export default function LeetCodeOverview({ userInfo, contestInfo, calendar }) {
 
   return (
     <LeetCodeSection title="Overview" subtitle="A quick snapshot of profile, problem-solving, and contest activity.">
-      <div className="grid gap-4 xl:grid-cols-[21rem_1fr]">
+      <div className="grid min-w-0 gap-4 xl:grid-cols-[minmax(18rem,21rem)_minmax(0,1fr)]">
         <div className="rounded-xl border border-white/10 bg-[linear-gradient(145deg,#181818,#101010)] shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
           <ProgressRings
             totalSolved={totalSolved}

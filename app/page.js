@@ -30,16 +30,16 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#090909] bg-[radial-gradient(circle_at_20%_0%,rgba(255,47,125,0.18),transparent_34%),radial-gradient(circle_at_85%_10%,rgba(255,116,24,0.14),transparent_32%),linear-gradient(180deg,#090909,#101010_48%,#080808)] px-4 py-5 text-zinc-100 sm:px-6">
-      <div className="mx-auto flex min-h-[calc(100vh-2.5rem)] w-full max-w-6xl items-center">
-        <div className="grid w-full gap-5 lg:grid-cols-[1fr_26rem] lg:items-center">
-          <section>
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#242424] px-3 py-2 text-sm text-zinc-300">
+    <main className="min-h-screen overflow-x-hidden bg-[#090909] bg-[radial-gradient(circle_at_20%_0%,rgba(255,47,125,0.18),transparent_34%),radial-gradient(circle_at_85%_10%,rgba(255,116,24,0.14),transparent_32%),linear-gradient(180deg,#090909,#101010_48%,#080808)] px-3 py-5 text-zinc-100 sm:px-6">
+      <div className="mx-auto flex min-h-[calc(100dvh-2.5rem)] w-full max-w-6xl items-center">
+        <div className="grid w-full min-w-0 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(20rem,26rem)] lg:items-center">
+          <section className="min-w-0">
+            <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/10 bg-[#242424] px-3 py-2 text-sm text-zinc-300">
               <BarChart3 className="h-4 w-4 text-[#ff6a3d]" />
               AlgoJourney for Students
             </div>
 
-            <h1 className="mt-5 max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
+            <h1 className="mt-5 max-w-2xl text-3xl font-semibold leading-tight text-white sm:text-5xl">
               Compact coding profile for LeetCode and Codeforces.
             </h1>
 
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </section>
 
-          <Card as="section" className="bg-[linear-gradient(145deg,#1c1c1c,#141414)] p-5 shadow-[0_28px_100px_rgba(0,0,0,0.42)]">
+          <Card as="section" className="bg-[linear-gradient(145deg,#1c1c1c,#141414)] p-4 shadow-[0_28px_100px_rgba(0,0,0,0.42)] sm:p-5">
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-white">Build your student profile</h2>
               <p className="mt-2 text-sm text-zinc-400">

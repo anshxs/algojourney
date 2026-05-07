@@ -39,7 +39,7 @@ function PlatformButton({ active, disabled, icon: Icon, label, onClick }) {
       type="button"
       disabled={disabled}
       onClick={onClick}
-      className={`inline-flex h-10 items-center gap-2 rounded-lg border px-3 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-40 ${
+      className={`inline-flex h-10 min-w-0 items-center justify-center gap-2 rounded-lg border px-3 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-40 ${
         active
           ? "border-[#ff6a3d]/50 bg-[linear-gradient(135deg,rgba(255,47,125,0.22),rgba(255,116,24,0.18))] text-white shadow-[0_0_28px_rgba(255,106,61,0.14)]"
           : "border-white/10 bg-[#181818]/90 text-zinc-300 hover:border-white/20 hover:bg-[#242424] hover:text-white"
@@ -53,8 +53,8 @@ function PlatformButton({ active, disabled, icon: Icon, label, onClick }) {
 
 function FloatingNav({ sections, activeSection, onChange }) {
   return (
-    <aside className="lg:sticky lg:top-5 lg:h-fit">
-      <Card className="flex gap-2 overflow-x-auto border-white/10 bg-[#121212]/90 p-2 shadow-[0_18px_60px_rgba(0,0,0,0.28)] lg:w-52 lg:flex-col lg:overflow-visible">
+    <aside className="min-w-0 lg:sticky lg:top-5 lg:h-fit">
+      <Card className="flex max-w-full gap-2 overflow-x-auto border-white/10 bg-[#121212]/90 p-2 shadow-[0_18px_60px_rgba(0,0,0,0.28)] lg:w-52 lg:flex-col lg:overflow-visible">
         {sections.map((section) => {
           const Icon = section.icon;
           const active = activeSection === section.id;
@@ -335,12 +335,12 @@ export default function LeetCodeProfile({ leetcode, codeforces }) {
   }
 
   return (
-    <main className="min-h-screen bg-[#090909] bg-[radial-gradient(circle_at_20%_0%,rgba(255,47,125,0.16),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(255,116,24,0.12),transparent_30%),linear-gradient(180deg,#090909,#101010_42%,#080808)] px-3 py-4 text-zinc-100 sm:px-5">
+    <main className="min-h-screen overflow-x-hidden bg-[#090909] bg-[radial-gradient(circle_at_20%_0%,rgba(255,47,125,0.16),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(255,116,24,0.12),transparent_30%),linear-gradient(180deg,#090909,#101010_42%,#080808)] px-2 py-3 text-zinc-100 sm:px-5 sm:py-4">
       <div className="mx-auto max-w-7xl">
-        <header className="mb-4 flex flex-col gap-3 rounded-2xl border border-white/10 bg-[#151515]/90 p-3 shadow-[0_18px_70px_rgba(0,0,0,0.32)] backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-          <div>
+        <header className="mb-4 flex min-w-0 flex-col gap-3 rounded-2xl border border-white/10 bg-[#151515]/90 p-3 shadow-[0_18px_70px_rgba(0,0,0,0.32)] backdrop-blur sm:flex-row sm:items-center sm:justify-between">
+          <div className="min-w-0">
             <p className="text-xs uppercase tracking-[0.18em] text-zinc-500">AlgoJourney</p>
-            <h1 className="mt-1 text-xl font-semibold text-white">Profile dashboard</h1>
+            <h1 className="mt-1 break-words text-xl font-semibold text-white">Profile dashboard</h1>
             {platform === "leetcode" && leetcodeCalendar?.streak ? (
               <div className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-[#ff6a3d]/20 bg-[#ff6a3d]/10 px-2.5 py-1 text-xs font-medium text-[#ffb088]">
                 <Flame className="h-3.5 w-3.5" />
@@ -349,7 +349,7 @@ export default function LeetCodeProfile({ leetcode, codeforces }) {
             ) : null}
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="grid w-full grid-cols-2 gap-2 sm:flex sm:w-auto sm:flex-wrap sm:justify-end">
             <PlatformButton
               active={platform === "leetcode"}
               disabled={!leetcode}
@@ -369,7 +369,7 @@ export default function LeetCodeProfile({ leetcode, codeforces }) {
               variant="secondary"
               size="sm"
               onClick={handleShare}
-              className={copied ? "border-[#28d17c]/30 bg-[#28d17c]/10 text-[#9ff2c4]" : ""}
+              className={`col-span-2 sm:col-span-1 ${copied ? "border-[#28d17c]/30 bg-[#28d17c]/10 text-[#9ff2c4]" : ""}`}
             >
               {copied ? <Check className="h-4 w-4" /> : <Share2 className="h-4 w-4" />}
               {copied ? "Copied" : "Share"}
@@ -377,11 +377,11 @@ export default function LeetCodeProfile({ leetcode, codeforces }) {
           </div>
         </header>
 
-        <div className="grid gap-4 lg:grid-cols-[13rem_1fr]">
+        <div className="grid min-w-0 gap-4 lg:grid-cols-[13rem_minmax(0,1fr)]">
           <FloatingNav sections={sections} activeSection={activeSection} onChange={setActiveSection} />
           <section
             key={`${platform}-${activeSection}`}
-            className="min-w-0 rounded-2xl border border-white/10 bg-[#111111]/70 p-2 shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur [animation:soft-in_240ms_ease-out]"
+            className="min-w-0 rounded-2xl border border-white/10 bg-[#111111]/70 p-2 shadow-[0_18px_70px_rgba(0,0,0,0.28)] backdrop-blur [animation:soft-in_240ms_ease-out] sm:p-3"
           >
             {content}
           </section>

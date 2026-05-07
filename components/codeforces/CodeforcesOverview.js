@@ -17,9 +17,9 @@ function BarList({ title, items, color = "bg-[#ff2f7d]" }) {
       <div className="mt-4 space-y-3">
         {items.map(([label, value]) => (
           <div key={label}>
-            <div className="flex items-center justify-between gap-3 text-sm">
+            <div className="flex min-w-0 items-center justify-between gap-3 text-sm">
               <span className="truncate text-zinc-300">{label}</span>
-              <span className="font-medium text-white">{formatNumber(value)}</span>
+              <span className="shrink-0 font-medium text-white">{formatNumber(value)}</span>
             </div>
             <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-white/10">
               <div
@@ -73,7 +73,7 @@ export default function CodeforcesOverview({ stats }) {
         </Card>
       </div>
 
-      <div className="grid gap-4 xl:grid-cols-3">
+      <div className="grid min-w-0 gap-4 xl:grid-cols-3">
         <BarList title="Verdicts" items={topEntries(verdicts)} color="bg-[#ff2f7d]" />
         <BarList title="Languages" items={topEntries(languages)} color="bg-[#ff7418]" />
         <BarList title="Top Tags" items={topEntries(tags)} color="bg-[#6b7cff]" />

@@ -29,15 +29,15 @@ function ChartTooltip({ active, payload, label }) {
 export default function RatingChart({ data, color = "#38bdf8" }) {
   if (!data?.length) {
     return (
-      <div className="flex h-72 items-center justify-center rounded-lg border border-dashed border-white/10 bg-[#151515] text-sm text-zinc-400">
+      <div className="flex h-64 items-center justify-center rounded-lg border border-dashed border-white/10 bg-[#151515] px-3 text-center text-sm text-zinc-400 sm:h-72">
         No rating history yet.
       </div>
     );
   }
 
   return (
-    <div className="h-72 rounded-lg border border-white/10 bg-[#151515] p-3 [animation:soft-scale_320ms_ease-out]">
-      <ResponsiveContainer width="100%" height="100%">
+    <div className="h-64 min-w-0 rounded-lg border border-white/10 bg-[#151515] p-2 [animation:soft-scale_320ms_ease-out] sm:h-72 sm:p-3">
+      <ResponsiveContainer width="100%" height="100%" minWidth={0}>
         <LineChart data={data} margin={{ left: 0, right: 12, top: 12, bottom: 0 }}>
           <CartesianGrid stroke="rgba(255,255,255,0.08)" vertical={false} />
           <XAxis
