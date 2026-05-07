@@ -1,0 +1,157 @@
+{
+  "type": "object",
+  "properties": {
+    "totalSolved": {
+      "type": "number"
+    },
+    "totalSubmissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "difficulty": {
+            "type": "string",
+            "enum": ["All", "Easy", "Medium", "Hard"]
+          },
+          "count": {
+            "type": "number"
+          },
+          "submissions": {
+            "type": "number"
+          }
+        },
+        "required": ["difficulty", "count", "submissions"]
+      }
+    },
+    "totalQuestions": {
+      "type": "number"
+    },
+    "easySolved": {
+      "type": "number"
+    },
+    "totalEasy": {
+      "type": "number"
+    },
+    "mediumSolved": {
+      "type": "number"
+    },
+    "totalMedium": {
+      "type": "number"
+    },
+    "hardSolved": {
+      "type": "number"
+    },
+    "totalHard": {
+      "type": "number"
+    },
+    "ranking": {
+      "type": "number"
+    },
+    "contributionPoint": {
+      "type": "number"
+    },
+    "reputation": {
+      "type": "number"
+    },
+    "submissionCalendar": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "recentSubmissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "titleSlug": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "statusDisplay": {
+            "type": "string"
+          },
+          "lang": {
+            "type": "string"
+          },
+          "__typename": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "titleSlug",
+          "timestamp",
+          "statusDisplay",
+          "lang"
+        ]
+      }
+    },
+    "matchedUserStats": {
+      "type": "object",
+      "properties": {
+        "acSubmissionNum": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "difficulty": {
+                "type": "string",
+                "enum": ["All", "Easy", "Medium", "Hard"]
+              },
+              "count": {
+                "type": "number"
+              },
+              "submissions": {
+                "type": "number"
+              }
+            },
+            "required": ["difficulty", "count", "submissions"]
+          }
+        },
+        "totalSubmissionNum": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "difficulty": {
+                "type": "string",
+                "enum": ["All", "Easy", "Medium", "Hard"]
+              },
+              "count": {
+                "type": "number"
+              },
+              "submissions": {
+                "type": "number"
+              }
+            },
+            "required": ["difficulty", "count", "submissions"]
+          }
+        }
+      },
+      "required": ["acSubmissionNum", "totalSubmissionNum"]
+    }
+  },
+  "required": [
+    "totalSolved",
+    "totalSubmissions",
+    "totalQuestions",
+    "easySolved",
+    "totalEasy",
+    "mediumSolved",
+    "totalMedium",
+    "hardSolved",
+    "totalHard",
+    "ranking",
+    "contributionPoint",
+    "reputation",
+    "submissionCalendar",
+    "recentSubmissions",
+    "matchedUserStats"
+  ]
+}
